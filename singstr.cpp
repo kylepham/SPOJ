@@ -1,3 +1,9 @@
+/****************************************************************************  
+*       LONGEST CONTINUOUS SUB-STRING OF A STRING (LENGTH <= 10^7)          *
+*  THIS CODE DEMONSTRATES 2 APPROACHES: BRUTE-FORCE & OPTIMIZED ALGORITHM   *
+*            TIME COMPLEXITY OF OPTIMIZED APPROACH: O(N)                    *
+*****************************************************************************/
+
 #include <bits/stdc++.h>
 using namespace std;
 string s;
