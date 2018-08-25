@@ -1,5 +1,6 @@
 /****************************************************************************  
 *       LONGEST CONTINUOUS SUB-STRING OF A STRING (LENGTH <= 10^7)          *
+*                    CONTAINS DISTINCTIVE CHARACTERS                        *
 *  THIS CODE DEMONSTRATES 2 APPROACHES: BRUTE-FORCE & OPTIMIZED ALGORITHM   *
 *            TIME COMPLEXITY OF OPTIMIZED APPROACH: O(N)                    *
 *****************************************************************************/
