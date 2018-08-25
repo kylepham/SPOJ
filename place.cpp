@@ -1,5 +1,6 @@
 //PLACE PROBLEM IN SPOJ
 //ALG: DFS + FENWICK TREE
+//TIME COMPLEXITY: O(N * LOG(N))
 #include<bits/stdc++.h>
 #define maxN 500000+10
 using namespace std;
