@@ -1,15 +1,15 @@
 /*http://vnoi.info/problems/FP/
-        Algorithm: DP
-        Solution: Determine F[n][k][0] is the largest possible String which is a combination of k numbers in array of n numbers
+       Algorithm: DP
+       Solution: Determine F[n][k][0] is the largest possible String which is a combination of k numbers in array of n numbers
               
-        Initialization: 
-            - Array "a" is a pair of <string, int>
-            - F[1][1][a[1].second] = a[1].first
-            - F[i][j][kk] = MAX(F[i-1][j][kk], F[i][j][kk])
-            - F[i][j][kk] = MAX(F[i-1][j-1][(kk - a[i].second + 9) % 9] + a[i].first, F[i][j][kk]) 
-                        if ( F[i-1][j-1][(kk - a[i].second + 9) % 9] != "" ) // check max value
-                        or ( F[i-1][j-1][(kk - a[i].second + 9) % 9] == "" and kk == a[i].second && j == 1 ) // create new string
-        Time Complexity: O(9 * N * K)
+       Initialization: 
+           - Array "a" is a pair of <string, int>
+           - F[1][1][a[1].second] = a[1].first
+           - F[i][j][kk] = MAX(F[i-1][j][kk], F[i][j][kk])
+           - F[i][j][kk] = MAX(F[i-1][j-1][(kk - a[i].second + 9) % 9] + a[i].first, F[i][j][kk]) 
+                       if ( F[i-1][j-1][(kk - a[i].second + 9) % 9] != "" ) // check max value
+                       or ( F[i-1][j-1][(kk - a[i].second + 9) % 9] == "" and kk == a[i].second && j == 1 ) // create new string
+       Time Complexity: O(9 * N * K)
 */
 #include <bits/stdc++.h>
 #define nmax 105
